@@ -103,7 +103,7 @@ header{
         display: flex !important;
         align-items: center;
         box-sizing: content-box;
-        padding-left: 35%; /*Único jeito de conseguir centralizar a logo, se tiver uma maneira melhor, por favor, atualizar*/
+        padding-left: 30%; /*Único jeito de conseguir centralizar a logo, se tiver uma maneira melhor, por favor, atualizar*/
     }
 
     .sidebar{
@@ -197,6 +197,24 @@ header{
     width: 20px;
 }
 
+@media (max-width:500px){
+    .destaque{
+        padding-left: 3%;
+    }
+
+    .slideContainer{
+        width: 300px;
+    }
+
+    .banner{
+        width: 1230px;
+    }
+
+    .imagem{
+        width: 1300px;
+    }
+}
+
 main{
     padding: 0px 10%;
 }
@@ -272,9 +290,31 @@ main{
     background: transparent;
 }
 
+@media (max-width:500px){
+    main{
+        padding: 3%;
+    }
+
+    .conteudo{
+        border-radius: 30px;
+    }
+
+    .carouselContainer, .carouselContainer2{
+        width: 95%;
+    }
+
+    #preCrsl, #nxtCrsl, #preCrsl2, #nxtCrsl2{
+        width: 9vw;
+    }
+}
+
 @media (max-width: 860px){
     .banner{
         width: 300px;
+    }
+
+    .conteudo{
+        margin-top: 0;
     }
     
     .imagem{
